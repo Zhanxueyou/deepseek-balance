@@ -112,10 +112,10 @@ alias deepseek-balance="python3 /path/to/deepseek-balance/check_balance.py"
 
 ### 架构
 
-- **宿主半部 `lib/index.js`**：注册同源路由 `/dsh-balance-api/stats`（仅 loopback + 同源访问），
+- **宿主端 `lib/index.js`**：注册同源路由 `/dsh-balance-api/stats`（仅 loopback + 同源访问），
   从 DSH `credentials` 服务解析 `DEEPSEEK_API_KEY` 查余额；用量直接扫描本地会话日志
   （多帧 zstd 逐帧解码，与 DSH 持久化层算法一致）。
-- **客户端半部 `lib/client.js`**：注册进侧边栏 `sidebar.footer.action` 插槽，弹出面板渲染
+- **浏览器端 `lib/client.js`**：注册进侧边栏 `sidebar.footer.action` 插槽，弹出面板渲染
   数据。仅依赖 DSH 种子模块（react / primitives），无任何第三方依赖。
 
 ### 安装与启用
