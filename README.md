@@ -3,7 +3,7 @@
 包含两个部分：
 
 1. **CLI 工具 `check_balance.py`**：终端查询余额，低余额时 macOS 通知提醒。
-2. **DSH 侧边栏插件 `dsh-balance-panel/`**：直接嵌入 DeepSeek Harness Web 侧边栏，可视化**余额 / 今日用量 / 本月用量 / 缓存命中**。
+2. **DSH 侧边栏插件（仓库根即为插件包）**：直接嵌入 DeepSeek Harness Web 侧边栏，可视化**余额 / 今日用量 / 本月用量 / 缓存命中**。
 
 ---
 
@@ -94,7 +94,7 @@ alias deepseek-balance="python3 /path/to/deepseek-balance/check_balance.py"
 
 ---
 
-## 二、DSH 侧边栏插件 `dsh-balance-panel/`
+## 二、DSH 侧边栏插件（仓库根 = 插件包）
 
 把余额与用量仪表盘直接嵌入 DeepSeek Harness Web GUI 侧边栏（底部「DeepSeek 用量」按钮，点击弹出面板）。
 
