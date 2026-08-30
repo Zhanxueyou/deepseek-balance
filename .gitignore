@@ -1,0 +1,41 @@
+# === 环境与密钥 ===
+# 真实 API Key 环境变量文件（保留 .env.example 作为模板）
+.env
+.env.local
+.env.*.local
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+ENV/
+.python-version
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# === Node ===
+node_modules/
+dist/
+build/
+
+# === 系统与编辑器 ===
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# === 日志 ===
+logs/
+*.log
+npm-debug.log*
