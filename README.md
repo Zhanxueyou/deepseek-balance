@@ -5,6 +5,7 @@
 1. **CLI 工具 `check_balance.py`**：终端查询余额，低余额时 macOS 通知提醒。
 2. **DSH 侧边栏插件（仓库根即为插件包）**：直接嵌入 DeepSeek Harness Web 侧边栏，可视化**余额 / 今日用量 / 本月用量 / 缓存命中**。
 
+![余额查询](images/balance.png)
 ---
 
 ## 一、CLI 工具
@@ -125,11 +126,11 @@ alias deepseek-balance="python3 /path/to/deepseek-balance/check_balance.py"
    ```bash
    cd /path/to/deepseek-balance   # 进入项目源码目录（换成你的实际路径）
    mkdir -p ~/.dsh/profiles/node_modules
-   ln -sfn "$(pwd)/dsh-balance-panel" \
+   ln -sfn "$(pwd)" \
      ~/.dsh/profiles/node_modules/dsh-balance-panel
    ```
 
-   > `$(pwd)` 即当前目录；也可直接把 `"$(pwd)/dsh-balance-panel"` 换成源码目录的绝对路径。
+   > `$(pwd)` 即当前目录；也可直接把 `"$(pwd)"` 换成源码目录的绝对路径。
 2. 在 `~/.dsh/profiles/web/cordis.patch.yml` 注册一行：
    ```yaml
    - insert:
